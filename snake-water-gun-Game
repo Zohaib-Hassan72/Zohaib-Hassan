@@ -1,0 +1,38 @@
+
+# making a game of snake water gun , game 
+import random
+
+snake = 1 
+water = 2
+gun = 3 
+
+
+computer = random.randint( 1 , 3 )
+you = 1
+
+#change 1 , 2 , 3 to s , w , g
+youdic = { "s" : 1 , "w" : 2 , "g" : 3}
+
+
+choice = input ("Enter your Choice: ")
+changer = youdic[choice]
+if you == computer:
+    print("Match Draw")
+else : 
+    if(you == 1 and computer == 2):
+        print("You Win! Snake pi gya pani")
+    elif( you == 2 and computer == 1):
+        print("You Lost! Snaker pee gya water ")
+    elif( you == 1 and computer == 3):
+        print("You Lost! Gun kill the snake ")
+    elif( you == 3 and computer == 1):
+        print("You Win! Gun kill the snake ")    
+    elif( you == 3 and computer == 2):
+        print("You Lost! Gun gai pani me ")        
+    elif( you == 2 and computer == 3):
+        print("You Win! Gun gai pani me ")           
+        
+
+
+
+ 
